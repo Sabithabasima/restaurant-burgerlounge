@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    
 }
 
 
@@ -30,13 +31,7 @@ h4{
     margin-left:35px;
     margin-left: 10px;
 }
-.fa-envolpe{
-    
-}
 
-.fa-phone{
-    
-}
 .info-bar span{
     margin-left: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -489,12 +484,12 @@ h3{
     padding: 20px;
     
 }
-@media screen  (min-width: 100px) and (max-width: 768px){
+/* @media screen  (min-width: 100px) and (max-width: 768px){
 .franchise-apply h2 span {
     font-size: 42px !important;
     color: #F07922;
-}
-}
+} */
+/* } */
 @media (min-width:600px)
 {
     .franchise-apply h2 span{
