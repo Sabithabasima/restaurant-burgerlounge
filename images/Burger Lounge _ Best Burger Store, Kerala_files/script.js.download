@@ -1,0 +1,92 @@
+
+// body animate and navigation script
+$(document).ready(function(){
+
+
+
+    
+    $('.top_animate').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+    });
+    
+    $(window).scroll(function(){
+        if($(window).scrollTop()){
+            $('.min-navbar').addClass('navFixed');
+            $('.top_animate').show();
+        }else{
+            $('.min-navbar').removeClass('navFixed');
+            $('.top_animate').hide();
+        }
+    });
+    
+    $('.search').click(function(){
+        $('.search_cover').show();
+        $('body').addClass('body-overflow');
+    });
+    
+    $('.close_btn').click(function(){
+         $('.search_cover').hide();
+         $('body').removeClass('body-overflow');
+    });
+    
+    
+    $('.menu_btn').click(function(){
+        $('.min-vavigation').addClass('min-vavigation_add');
+        $('.menu_cover').fadeIn();
+    });
+    
+    $('.left_toggle_btn').click(function(){
+        $('.min-vavigation').removeClass('min-vavigation_add');
+        $('.menu_cover').fadeOut();
+    });
+
+    $('.list_menu').click(function(){
+        $('.min-vavigation').removeClass('min-vavigation_add');
+        $('.menu_cover').fadeOut();
+    });
+    
+    $('.menu_cover').click(function(){
+        $('.min-vavigation').removeClass('min-vavigation_add');
+        $('.menu_cover').fadeOut();
+    });
+
+});
+
+
+
+$(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 500, function(){
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+
+  $('#testimonial_owl').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+
+
+
