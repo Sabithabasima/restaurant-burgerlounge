@@ -2,15 +2,15 @@
     box-sizing: border-box;
     
 }
+.container{
+    width: 100%;
+}
 
 
 
 h4{
     display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    
 
 }
 
@@ -77,22 +77,26 @@ nav{
 
 /* left logo */
 nav .logo{
-    width: 10%;
+    width: 12%;
     position: absolute;
-    
+    margin-top: 40px;
 
 }
 
 /* right logo */
 nav .right-logo{
-    width: 10%;
+    width: 11%;
     margin-right: 10px;
+}
+nav ul{
+    margin-left: 90px;
 }
 
 
 nav ul li{
     display: inline-block;
     margin: 30px 15px;
+    margin-left: 20px;
 }
 nav ul li a{
     text-decoration: none;
@@ -122,8 +126,7 @@ nav ul li a:hover{
 
 .aboutus{
     background-color: #ffc107;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    
     align-items: center;
     gap: 2rem;
    
@@ -147,17 +150,27 @@ nav ul li a:hover{
 }
 
 @media ( max-width:600px) {
+
+    #home{
+        width: 100%;
+        height: 100%;
+    }
+    .home{
+        width: 100%;
+        height: 500px;
+    }
     #about{
         height: 800px;
     }
     .about-img img{
         width: 50%;
-        position: absolute;
+        
         margin-top: 5px;
 
     }
     .about-text{
         margin-bottom: 1px;
+        
 
     }
     
@@ -177,31 +190,33 @@ nav ul li a:hover{
 }
 
 .about-img{
-    width: 100px;;
-    height: 550px;
+    width: 10%;
+    
+ 
     margin-left: 20px;
+    left: 0;
+    
     
 }
 
 /* founder */
 @media (max-width:600px) {
-    #founder{
-        height: 1000px;
-    }
+    
     .founder-container{
         
-        height: 500px;
+        
         margin-top: 0px;
         
-        position: relative;
+        
        
     }
     .found-img img{
-        width: 40%;
+        width: 60%;
         border: #fd7e14 solid;
         border-style: solid;
-        position: absolute;
+        
         margin-bottom: 0px;
+        top: 0;
         
         
 
@@ -214,17 +229,7 @@ nav ul li a:hover{
 
     
 }
-.founder-container{
-    
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 100px;
-    
-    padding: 5px;
-    
-}
+
 .found-img img{
     width: 100%;
     border: #fd7e14 solid;
